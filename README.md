@@ -71,25 +71,6 @@ The app includes an **Interactive Demo Switcher** bar at the very top of the scr
 
 ---
 
-## 🗄️ Supabase Setup & Database Schema
-
-The database migration and seed files are ready inside `/supabase`:
-
-1. Open your [Supabase Project Dashboard](https://app.supabase.com).
-2. Go to the **SQL Editor**.
-3. Copy and run the contents of [`supabase/schema.sql`](file:///c:/Users/acer/Downloads/swiftfinal2/supabase/schema.sql) (creates tables, RLS policies, functions, and storage buckets).
-4. Run [`supabase/seed.sql`](file:///c:/Users/acer/Downloads/swiftfinal2/supabase/seed.sql) to populate realistic college textbook data.
-5. In your project root, open `.env` and fill in your keys:
-   ```env
-   VITE_SUPABASE_URL=https://your-project.supabase.co
-   VITE_SUPABASE_ANON_KEY=your-anon-public-key
-   ```
-6. Restart Vite: `npm run dev`. The app will now communicate directly with your live Supabase PostgreSQL backend.
-
----
-
-## 📱 Responsive Layouts
-
 * **Desktop:** Clean sidebar with department navigation, stats cards, and interactive filters.
 * **Mobile:** Bottom navigation bar matching exact specifications:
   - *Student:* Home, Browse, Donate, Requests, Profile
