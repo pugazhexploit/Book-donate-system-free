@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-slate-50/90 dark:bg-[#070b14] dark:text-slate-100;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* React Bits Modern Utility Classes */
+.shiny-text {
+  background: linear-gradient(
+    120deg,
+    rgba(16, 185, 129, 0.2) 30%,
+    rgba(16, 185, 129, 0.9) 50%,
+    rgba(16, 185, 129, 0.2) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.glass-card {
+  @apply bg-white/95 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/90 dark:border-slate-800/80 shadow-sm hover:shadow-md transition-all duration-300;
+}
+
+.glass-card-hover {
+  @apply hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:shadow-emerald-500/10 dark:hover:shadow-emerald-500/5;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-emerald-500/60 dark:bg-emerald-500/60;
+}
